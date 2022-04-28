@@ -12,7 +12,7 @@ function App() {
 
   useEffect(()=>{
     
-    Axios.get("http://localhost:3001/").then(response=>{
+    Axios.get("https://quiet-dawn-30194.herokuapp.com/").then(response=>{
       setNotes(response.data);
       console.log(response);
     })
@@ -34,7 +34,7 @@ function App() {
         return index !== idPage;
       });
     });
-    Axios.delete(`http://localhost:3001/delete/${idDB}`);
+    Axios.delete(`https://quiet-dawn-30194.herokuapp.com/delete/${idDB}`);
    
   }
 

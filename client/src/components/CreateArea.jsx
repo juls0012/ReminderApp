@@ -30,7 +30,7 @@ function CreateArea(props) {
       content: ""
     });
 
-    Axios.post("http://localhost:3001/insert",{
+    Axios.post("https://quiet-dawn-30194.herokuapp.com/insert",{
       title:note.title,
       content:note.content
     })
