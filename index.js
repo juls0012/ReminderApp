@@ -41,7 +41,7 @@ app.post("/insert",(req,res)=>{
 
     Note.create(newNote,(err)=>{
         if(!err){
-            console.log("succesfuylli added");
+            console.log("it was succesgfully added");
         }else{
             console.log(err);
         }
